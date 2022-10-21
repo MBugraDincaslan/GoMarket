@@ -3,13 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		6F2F469928EF0DA5003CFEBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2F469828EF0DA5003CFEBC /* AppDelegate.swift */; };
 		6F2F469B28EF0DA5003CFEBC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2F469A28EF0DA5003CFEBC /* SceneDelegate.swift */; };
-		6F2F469D28EF0DA5003CFEBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2F469C28EF0DA5003CFEBC /* ViewController.swift */; };
 		6F2F46A028EF0DA5003CFEBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F2F469E28EF0DA5003CFEBC /* Main.storyboard */; };
 		6F2F46A328EF0DA5003CFEBC /* GoMarket.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6F2F46A128EF0DA5003CFEBC /* GoMarket.xcdatamodeld */; };
 		6F2F46A528EF0DA7003CFEBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F2F46A428EF0DA7003CFEBC /* Assets.xcassets */; };
@@ -17,6 +16,18 @@
 		6F2F46B328EF0DA7003CFEBC /* GoMarketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2F46B228EF0DA7003CFEBC /* GoMarketTests.swift */; };
 		6F2F46BD28EF0DA7003CFEBC /* GoMarketUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2F46BC28EF0DA7003CFEBC /* GoMarketUITests.swift */; };
 		6F2F46BF28EF0DA7003CFEBC /* GoMarketUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2F46BE28EF0DA7003CFEBC /* GoMarketUITestsLaunchTests.swift */; };
+		6FBB099328FD8DD20046617F /* ItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBB099228FD8DD20046617F /* ItemsTableViewController.swift */; };
+		6FBB099528FDA12C0046617F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBB099428FDA12C0046617F /* Item.swift */; };
+		6FD208E42901669A00F31C10 /* ItemAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD208E32901669A00F31C10 /* ItemAddViewController.swift */; };
+		6FF4B82E28EF1AFA00A8FE61 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6FF4B82D28EF1AFA00A8FE61 /* GoogleService-Info.plist */; };
+		6FF4B83028EF1B4A00A8FE61 /* CategoryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF4B82F28EF1B4A00A8FE61 /* CategoryCollectionViewController.swift */; };
+		6FF4B83228EF1BE900A8FE61 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF4B83128EF1BE900A8FE61 /* CategoryCollectionViewCell.swift */; };
+		6FF4B83428EF1F6E00A8FE61 /* FirebaseCollectionReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF4B83328EF1F6E00A8FE61 /* FirebaseCollectionReference.swift */; };
+		6FF4B83928EF346D00A8FE61 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF4B83828EF346D00A8FE61 /* Category.swift */; };
+		6FF4B83C28EF51CC00A8FE61 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF4B83B28EF51CC00A8FE61 /* Constants.swift */; };
+		BA479D13F26AEAF66B28D88D /* Pods_GoMarket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC3EB2DB92218C0BE633B20 /* Pods_GoMarket.framework */; };
+		C6AA3E53AEE1BDA5F7122B36 /* Pods_GoMarket_GoMarketUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19E4BF03BDC9AA90DE9BBD65 /* Pods_GoMarket_GoMarketUITests.framework */; };
+		CA71F88BD327E16852457677 /* Pods_GoMarketTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42E2E775389A8B34DF8E1BEF /* Pods_GoMarketTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,10 +48,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		19E4BF03BDC9AA90DE9BBD65 /* Pods_GoMarket_GoMarketUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoMarket_GoMarketUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		251A49F97BE699123327C893 /* Pods-GoMarketTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoMarketTests.debug.xcconfig"; path = "Target Support Files/Pods-GoMarketTests/Pods-GoMarketTests.debug.xcconfig"; sourceTree = "<group>"; };
+		42E2E775389A8B34DF8E1BEF /* Pods_GoMarketTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoMarketTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F2F469528EF0DA5003CFEBC /* GoMarket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoMarket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F2F469828EF0DA5003CFEBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6F2F469A28EF0DA5003CFEBC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6F2F469C28EF0DA5003CFEBC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6F2F469F28EF0DA5003CFEBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6F2F46A228EF0DA5003CFEBC /* GoMarket.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GoMarket.xcdatamodel; sourceTree = "<group>"; };
 		6F2F46A428EF0DA7003CFEBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +64,21 @@
 		6F2F46B828EF0DA7003CFEBC /* GoMarketUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoMarketUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F2F46BC28EF0DA7003CFEBC /* GoMarketUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoMarketUITests.swift; sourceTree = "<group>"; };
 		6F2F46BE28EF0DA7003CFEBC /* GoMarketUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoMarketUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6FBB099228FD8DD20046617F /* ItemsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsTableViewController.swift; sourceTree = "<group>"; };
+		6FBB099428FDA12C0046617F /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		6FD208E32901669A00F31C10 /* ItemAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemAddViewController.swift; sourceTree = "<group>"; };
+		6FF4B82D28EF1AFA00A8FE61 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6FF4B82F28EF1B4A00A8FE61 /* CategoryCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewController.swift; sourceTree = "<group>"; };
+		6FF4B83128EF1BE900A8FE61 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		6FF4B83328EF1F6E00A8FE61 /* FirebaseCollectionReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseCollectionReference.swift; sourceTree = "<group>"; };
+		6FF4B83828EF346D00A8FE61 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		6FF4B83B28EF51CC00A8FE61 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		AACA04679C4CFF3C6F717D7B /* Pods-GoMarket-GoMarketUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoMarket-GoMarketUITests.release.xcconfig"; path = "Target Support Files/Pods-GoMarket-GoMarketUITests/Pods-GoMarket-GoMarketUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AE1E4CDA086798B253F8EFBC /* Pods-GoMarket-GoMarketUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoMarket-GoMarketUITests.debug.xcconfig"; path = "Target Support Files/Pods-GoMarket-GoMarketUITests/Pods-GoMarket-GoMarketUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C4C227A9EDA82DB3B3D965B3 /* Pods-GoMarket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoMarket.release.xcconfig"; path = "Target Support Files/Pods-GoMarket/Pods-GoMarket.release.xcconfig"; sourceTree = "<group>"; };
+		CDC3EB2DB92218C0BE633B20 /* Pods_GoMarket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoMarket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA573BDED2E896595E80E39D /* Pods-GoMarketTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoMarketTests.release.xcconfig"; path = "Target Support Files/Pods-GoMarketTests/Pods-GoMarketTests.release.xcconfig"; sourceTree = "<group>"; };
+		F0B7186CFA1B2A0C6FF441D9 /* Pods-GoMarket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoMarket.debug.xcconfig"; path = "Target Support Files/Pods-GoMarket/Pods-GoMarket.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA479D13F26AEAF66B28D88D /* Pods_GoMarket.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA71F88BD327E16852457677 /* Pods_GoMarketTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +102,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6AA3E53AEE1BDA5F7122B36 /* Pods_GoMarket_GoMarketUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36C643C386A5EA219604AA78 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CDC3EB2DB92218C0BE633B20 /* Pods_GoMarket.framework */,
+				19E4BF03BDC9AA90DE9BBD65 /* Pods_GoMarket_GoMarketUITests.framework */,
+				42E2E775389A8B34DF8E1BEF /* Pods_GoMarketTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6F2F468C28EF0DA5003CFEBC = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +126,8 @@
 				6F2F46B128EF0DA7003CFEBC /* GoMarketTests */,
 				6F2F46BB28EF0DA7003CFEBC /* GoMarketUITests */,
 				6F2F469628EF0DA5003CFEBC /* Products */,
+				86E1CE309C1776159918ED87 /* Pods */,
+				36C643C386A5EA219604AA78 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,11 +146,15 @@
 			children = (
 				6F2F469828EF0DA5003CFEBC /* AppDelegate.swift */,
 				6F2F469A28EF0DA5003CFEBC /* SceneDelegate.swift */,
-				6F2F469C28EF0DA5003CFEBC /* ViewController.swift */,
 				6F2F469E28EF0DA5003CFEBC /* Main.storyboard */,
+				6FF4B83A28EF34DB00A8FE61 /* Model */,
+				6FF4B83728EF2E7C00A8FE61 /* Custom Cells */,
+				6FF4B83528EF2E3700A8FE61 /* Main Views */,
+				6FF4B83628EF2E5600A8FE61 /* Helpers */,
 				6F2F46A428EF0DA7003CFEBC /* Assets.xcassets */,
 				6F2F46A628EF0DA7003CFEBC /* LaunchScreen.storyboard */,
 				6F2F46A928EF0DA7003CFEBC /* Info.plist */,
+				6FF4B82D28EF1AFA00A8FE61 /* GoogleService-Info.plist */,
 				6F2F46A128EF0DA5003CFEBC /* GoMarket.xcdatamodeld */,
 			);
 			path = GoMarket;
@@ -130,6 +177,55 @@
 			path = GoMarketUITests;
 			sourceTree = "<group>";
 		};
+		6FF4B83528EF2E3700A8FE61 /* Main Views */ = {
+			isa = PBXGroup;
+			children = (
+				6FF4B82F28EF1B4A00A8FE61 /* CategoryCollectionViewController.swift */,
+				6FBB099228FD8DD20046617F /* ItemsTableViewController.swift */,
+				6FD208E32901669A00F31C10 /* ItemAddViewController.swift */,
+			);
+			path = "Main Views";
+			sourceTree = "<group>";
+		};
+		6FF4B83628EF2E5600A8FE61 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6FF4B83328EF1F6E00A8FE61 /* FirebaseCollectionReference.swift */,
+				6FF4B83B28EF51CC00A8FE61 /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		6FF4B83728EF2E7C00A8FE61 /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				6FF4B83128EF1BE900A8FE61 /* CategoryCollectionViewCell.swift */,
+			);
+			path = "Custom Cells";
+			sourceTree = "<group>";
+		};
+		6FF4B83A28EF34DB00A8FE61 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6FF4B83828EF346D00A8FE61 /* Category.swift */,
+				6FBB099428FDA12C0046617F /* Item.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		86E1CE309C1776159918ED87 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F0B7186CFA1B2A0C6FF441D9 /* Pods-GoMarket.debug.xcconfig */,
+				C4C227A9EDA82DB3B3D965B3 /* Pods-GoMarket.release.xcconfig */,
+				AE1E4CDA086798B253F8EFBC /* Pods-GoMarket-GoMarketUITests.debug.xcconfig */,
+				AACA04679C4CFF3C6F717D7B /* Pods-GoMarket-GoMarketUITests.release.xcconfig */,
+				251A49F97BE699123327C893 /* Pods-GoMarketTests.debug.xcconfig */,
+				EA573BDED2E896595E80E39D /* Pods-GoMarketTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,9 +233,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6F2F46C228EF0DA7003CFEBC /* Build configuration list for PBXNativeTarget "GoMarket" */;
 			buildPhases = (
+				E277DDB10E66295FD60C31A7 /* [CP] Check Pods Manifest.lock */,
 				6F2F469128EF0DA5003CFEBC /* Sources */,
 				6F2F469228EF0DA5003CFEBC /* Frameworks */,
 				6F2F469328EF0DA5003CFEBC /* Resources */,
+				28B69CE99D0A87FC9170AE89 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,6 +252,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6F2F46C528EF0DA7003CFEBC /* Build configuration list for PBXNativeTarget "GoMarketTests" */;
 			buildPhases = (
+				AC60EA6049364E201C4DAD24 /* [CP] Check Pods Manifest.lock */,
 				6F2F46AA28EF0DA7003CFEBC /* Sources */,
 				6F2F46AB28EF0DA7003CFEBC /* Frameworks */,
 				6F2F46AC28EF0DA7003CFEBC /* Resources */,
@@ -172,9 +271,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6F2F46C828EF0DA7003CFEBC /* Build configuration list for PBXNativeTarget "GoMarketUITests" */;
 			buildPhases = (
+				1DDBA38B5536C5FF44359210 /* [CP] Check Pods Manifest.lock */,
 				6F2F46B428EF0DA7003CFEBC /* Sources */,
 				6F2F46B528EF0DA7003CFEBC /* Frameworks */,
 				6F2F46B628EF0DA7003CFEBC /* Resources */,
+				9FB151B6C20C231155E14246 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -210,7 +311,7 @@
 				};
 			};
 			buildConfigurationList = 6F2F469028EF0DA5003CFEBC /* Build configuration list for PBXProject "GoMarket" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -235,6 +336,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F2F46A828EF0DA7003CFEBC /* LaunchScreen.storyboard in Resources */,
+				6FF4B82E28EF1AFA00A8FE61 /* GoogleService-Info.plist in Resources */,
 				6F2F46A528EF0DA7003CFEBC /* Assets.xcassets in Resources */,
 				6F2F46A028EF0DA5003CFEBC /* Main.storyboard in Resources */,
 			);
@@ -256,15 +358,125 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1DDBA38B5536C5FF44359210 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoMarket-GoMarketUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		28B69CE99D0A87FC9170AE89 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoMarket/Pods-GoMarket-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoMarket/Pods-GoMarket-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoMarket/Pods-GoMarket-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FB151B6C20C231155E14246 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoMarket-GoMarketUITests/Pods-GoMarket-GoMarketUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoMarket-GoMarketUITests/Pods-GoMarket-GoMarketUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoMarket-GoMarketUITests/Pods-GoMarket-GoMarketUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC60EA6049364E201C4DAD24 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoMarketTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E277DDB10E66295FD60C31A7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoMarket-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6F2F469128EF0DA5003CFEBC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F2F469D28EF0DA5003CFEBC /* ViewController.swift in Sources */,
+				6FF4B83928EF346D00A8FE61 /* Category.swift in Sources */,
+				6FF4B83428EF1F6E00A8FE61 /* FirebaseCollectionReference.swift in Sources */,
+				6FD208E42901669A00F31C10 /* ItemAddViewController.swift in Sources */,
 				6F2F469928EF0DA5003CFEBC /* AppDelegate.swift in Sources */,
+				6FF4B83228EF1BE900A8FE61 /* CategoryCollectionViewCell.swift in Sources */,
 				6F2F469B28EF0DA5003CFEBC /* SceneDelegate.swift in Sources */,
+				6FBB099328FD8DD20046617F /* ItemsTableViewController.swift in Sources */,
+				6FBB099528FDA12C0046617F /* Item.swift in Sources */,
+				6FF4B83028EF1B4A00A8FE61 /* CategoryCollectionViewController.swift in Sources */,
 				6F2F46A328EF0DA5003CFEBC /* GoMarket.xcdatamodeld in Sources */,
+				6FF4B83C28EF51CC00A8FE61 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +648,7 @@
 		};
 		6F2F46C328EF0DA7003CFEBC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0B7186CFA1B2A0C6FF441D9 /* Pods-GoMarket.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -449,6 +662,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -464,6 +678,7 @@
 		};
 		6F2F46C428EF0DA7003CFEBC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4C227A9EDA82DB3B3D965B3 /* Pods-GoMarket.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -477,6 +692,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -492,6 +708,7 @@
 		};
 		6F2F46C628EF0DA7003CFEBC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 251A49F97BE699123327C893 /* Pods-GoMarketTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +729,7 @@
 		};
 		6F2F46C728EF0DA7003CFEBC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA573BDED2E896595E80E39D /* Pods-GoMarketTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -532,6 +750,7 @@
 		};
 		6F2F46C928EF0DA7003CFEBC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE1E4CDA086798B253F8EFBC /* Pods-GoMarket-GoMarketUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -550,6 +769,7 @@
 		};
 		6F2F46CA28EF0DA7003CFEBC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AACA04679C4CFF3C6F717D7B /* Pods-GoMarket-GoMarketUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
