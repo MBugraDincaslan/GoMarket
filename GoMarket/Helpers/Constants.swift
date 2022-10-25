@@ -9,6 +9,10 @@ import Foundation
 
 // KEY-Value
 
+//IDS and KEYS
+
+public let kFILEREFENCE = "gs://gomarket-80bd9.appspot.com"
+
 // Firebase
 
 public let kUSER_PATH = "User"
