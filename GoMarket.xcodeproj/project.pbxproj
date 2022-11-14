@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F1032DE291945D0007F2E5A /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1032DD291945D0007F2E5A /* ItemTableViewCell.swift */; };
+		6F1032E02922893E007F2E5A /* HelperFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1032DF2922893E007F2E5A /* HelperFunction.swift */; };
 		6F2F469928EF0DA5003CFEBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2F469828EF0DA5003CFEBC /* AppDelegate.swift */; };
 		6F2F469B28EF0DA5003CFEBC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2F469A28EF0DA5003CFEBC /* SceneDelegate.swift */; };
 		6F2F46A028EF0DA5003CFEBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F2F469E28EF0DA5003CFEBC /* Main.storyboard */; };
@@ -53,6 +55,8 @@
 		19E4BF03BDC9AA90DE9BBD65 /* Pods_GoMarket_GoMarketUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoMarket_GoMarketUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		251A49F97BE699123327C893 /* Pods-GoMarketTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoMarketTests.debug.xcconfig"; path = "Target Support Files/Pods-GoMarketTests/Pods-GoMarketTests.debug.xcconfig"; sourceTree = "<group>"; };
 		42E2E775389A8B34DF8E1BEF /* Pods_GoMarketTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoMarketTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F1032DD291945D0007F2E5A /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		6F1032DF2922893E007F2E5A /* HelperFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperFunction.swift; sourceTree = "<group>"; };
 		6F2F469528EF0DA5003CFEBC /* GoMarket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoMarket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F2F469828EF0DA5003CFEBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6F2F469A28EF0DA5003CFEBC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -198,6 +202,7 @@
 				6FF4B83B28EF51CC00A8FE61 /* Constants.swift */,
 				6FD208E52906C9C400F31C10 /* Reachability.swift */,
 				6FD208E72906CF3600F31C10 /* Downloader.swift */,
+				6F1032DF2922893E007F2E5A /* HelperFunction.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -206,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				6FF4B83128EF1BE900A8FE61 /* CategoryCollectionViewCell.swift */,
+				6F1032DD291945D0007F2E5A /* ItemTableViewCell.swift */,
 			);
 			path = "Custom Cells";
 			sourceTree = "<group>";
@@ -474,6 +480,7 @@
 			files = (
 				6FF4B83928EF346D00A8FE61 /* Category.swift in Sources */,
 				6FF4B83428EF1F6E00A8FE61 /* FirebaseCollectionReference.swift in Sources */,
+				6F1032E02922893E007F2E5A /* HelperFunction.swift in Sources */,
 				6FD208E42901669A00F31C10 /* ItemAddViewController.swift in Sources */,
 				6F2F469928EF0DA5003CFEBC /* AppDelegate.swift in Sources */,
 				6FD208E62906C9C400F31C10 /* Reachability.swift in Sources */,
@@ -484,6 +491,7 @@
 				6FBB099528FDA12C0046617F /* Item.swift in Sources */,
 				6FF4B83028EF1B4A00A8FE61 /* CategoryCollectionViewController.swift in Sources */,
 				6F2F46A328EF0DA5003CFEBC /* GoMarket.xcdatamodeld in Sources */,
+				6F1032DE291945D0007F2E5A /* ItemTableViewCell.swift in Sources */,
 				6FF4B83C28EF51CC00A8FE61 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

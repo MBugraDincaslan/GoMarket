@@ -25,7 +25,11 @@ class ItemAddViewController: UIViewController {
         if fieldAreCompleted() {
             saveToFirebase()
         } else {
-            print("Error All Fields Are Required")
+            
+            self.hud.textLabel.text = "ALL FIELD ARE REQUIRED!"
+            self.hud.indicatorView = JGProgressHUDErrorIndicatorView()
+            self.hud.show(in: self.view)
+            self.hud.dismiss(afterDelay: 2.0)
         }
     }
     @IBAction func cameraButton(_ sender: Any) {
@@ -48,6 +52,7 @@ class ItemAddViewController: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
     private func saveToFirebase() {
+        showLoadingIndicator()
         let item = Item()
         item.id = UUID().uuidString
         item.name = itemTextField.text!
@@ -60,7 +65,8 @@ class ItemAddViewController: UIViewController {
                 item.imageLinks = imageLikArray
                     
                     saveItemToFirestore(item)
-                    self.popTheView()
+                self.hideLoadingIndicator()
+                self.popTheView()
                 
             }
                 
@@ -90,20 +96,27 @@ class ItemAddViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    
-
-    
-    // MARK: - Navigation
-
-   
-   /* override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         
-        if segue.identifier == "itemToAddItem" {
-            let vc = segue.destination as! ItemAddViewController
-            vc.category = category!
-        }
-    }*/
+        activityIndıcator = NVActivityIndicatorView(frame: CGRect(x: self.view.frame.width / 2 - 30, y: self.view.frame.height / 2 - 30, width: 60, height: 60), type: .ballTrianglePath, color: #colorLiteral(red: 0.98, green: 0.49, blue: 0.47, alpha: 1) , padding: nil)
+    }
+    
 
+    
+    private func showLoadingIndicator() {
+        if activityIndıcator != nil {
+            self.view.addSubview(activityIndıcator!)
+            activityIndıcator!.startAnimating()
+        }
+    }
+    private func hideLoadingIndicator() {
+        if activityIndıcator != nil {
+            self.view.removeFromSuperview()
+            activityIndıcator!.stopAnimating()
+        }
+    }
+    
     private func showImageGallery() {
         self.gallery = GalleryController()
         self.gallery.delegate = self

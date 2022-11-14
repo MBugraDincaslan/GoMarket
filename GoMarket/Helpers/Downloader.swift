@@ -63,3 +63,31 @@ func uploadImages(images: [UIImage?], itemId: String, completion: @escaping (_ i
         })
     }
 
+func downloadImage(imageUrls: [String], completion: @escaping (_ images: [UIImage?]) -> Void) {
+    
+    var imageArray: [UIImage] = []
+    var dowloadCounter = 0
+    
+    for link in imageUrls {
+        
+        let url = NSURL(string: link)
+        let downloadQueue = DispatchQueue(label: "imageDowloadQueue")
+        downloadQueue.async {
+            dowloadCounter += 1
+            let data = NSData(contentsOf: url! as URL)
+            if data != nil {
+                imageArray .append(UIImage(data: data! as Data)!)
+                
+                if dowloadCounter == imageArray.count {
+                    DispatchQueue.main.async {
+                        completion(imageArray)
+                    }
+                }
+            } else {
+                print("couldnt download image")
+            }
+        }
+    }
+    
+    
+}

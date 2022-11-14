@@ -35,10 +35,32 @@ func saveItemToFirestore (_ item: Item) {
     item.id = id
     FirebaseReferences(.Items).document(id).setData(itemDictionaryFrom(item) as! [String : Any])
 }
+//MARK: HelperFUNCTION
 func itemDictionaryFrom (_ item: Item) -> NSDictionary {
     
     return NSDictionary(objects: [item.id, item.name, item.categoryId, item.description, item.price, item.imageLinks], forKeys: [kOBJECTID as NSCopying, kNAME as NSCopying, kCATEGORYID as NSCopying, kDESCRIPTION as NSCopying, kPRICE as NSCopying, kIMAGELINKS as NSCopying])
 }
+func downloadItemsFromFirebase(withCategoryId: String, completion: @escaping (_ itemArray: [Item]) -> Void) {
+    var itemArray: [Item] = []
+    FirebaseReferences(.Items).whereField(kCATEGORYID, isEqualTo: withCategoryId).getDocuments { (snapshot, error) in
+        
+        guard let snapshot = snapshot else {
+            completion(itemArray)
+            return
+        }
+        
+        if !snapshot.isEmpty {
+            for itemDic in snapshot.documents {
+                //print("created new category with")
+                itemArray.append(Item(_dictionary: itemDic.data() as NSDictionary))
+            }
+        }
+        
+        completion(itemArray)
+        }
+    
+}
+    
 /*func downloadCategoriesFromFirebase(completion: @escaping (_ categoryArray: [Item])-> Void ) {
         var itemArray: [Item] = []
         FirebaseReferences(.Items).getDocuments { (snapshot, error) in
